@@ -1,9 +1,10 @@
-import React from "react";
-
-export const PrayerTimesScreen: React.FC = () => {
+export const PrayerTimesScreen = () => {
   return (
-    <div id="webcrumbs">
-      <div className="grid grid-cols-1 md:grid-cols-12 rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-emerald-50 to-gray-100">
+    <div
+      id="webcrumbs"
+      className="min-h-screen min-w-full flex items-center justify-center bg-gradient-to-br from-emerald-50 to-gray-100"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-12 rounded-xl overflow-hidden shadow-lg w-full h-full max-w-screen-2xl">
         {/* Left Section - Prayer Times */}
         <div className="md:col-span-6 p-4 border-b md:border-b-0 md:border-r border-gray-200">
           <div className="flex justify-between items-center mb-4 border-b border-gray-200 pb-3">
@@ -84,6 +85,7 @@ export const PrayerTimesScreen: React.FC = () => {
                 src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
                 alt="Mosque"
                 className="w-full h-full object-cover"
+                keywords="islamic center, mosque, masjid, minaret, architecture"
               />
             </div>
             <h2 className="text-xl font-bold text-gray-700 mb-1">
@@ -172,6 +174,7 @@ export const PrayerTimesScreen: React.FC = () => {
                   src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://example.com/app"
                   alt="QR Code"
                   className="w-full h-full"
+                  keywords="qr code, app download, mobile app, islamic app"
                 />
               </div>
             </div>
